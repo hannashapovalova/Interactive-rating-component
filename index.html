@@ -11,7 +11,7 @@
   <title>Interactive rating component</title>
 </head>
 <body>
-  <div class="container main-container">
+  <div class="container" id="main-container">
     <div class="card">
       <div class="star">
         <img src="images/icon-star.svg" alt="Star-image">
@@ -21,34 +21,34 @@
         to help us improve our offering!
       </p>
       <ul class="vote">
-        <li class="numbers">
-          <button>1</button>
+        <li>
+          <button class="rate-btn" value="1">1</button>
         </li>
-        <li class="numbers">
-          <button>2</button>
+        <li>
+          <button class="rate-btn" value="2">2</button>
         </li>
-        <li class="numbers">
-          <button>3</button>
+        <li>
+          <button class="rate-btn" value="3">3</button>
         </li>
-        <li class="numbers">
-          <button>4</button>
+        <li>
+          <button class="rate-btn" value="4">4</button>
         </li>
-        <li class="numbers">
-          <button>5</button>
-        </li>
+        <li>
+          <button class="rate-btn" value="5">5</button>
+        </li> 
       </ul>
-      <button class="submit_button">
+      <button class="submit_button" id="submit_button">
         Submit
       </button>
     </div>
   </div>
 
-  <div class="container thank-you-container">
+  <div class="hidden" id="thank-you-container">
     <div class="card">
       <div class="thank-you-image">
         <img src="images/illustration-thank-you.svg" alt="Thank you image">
       </div>
-      <h2 class="choice">You selected 4 out of 5</h2>
+      <h2 class="choice">You selected <span id="rating"></span> out of 5</h2>
       <h1 class="thank">Thank you!</h1>
       <p class="thank-text">
         We appreciate you taking the time to give a rating. If you ever need more support, 
