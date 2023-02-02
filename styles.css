@@ -19,13 +19,10 @@ body {
   color: var(--white);
 }
 
-.container {
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.card {
   max-width: 420px;
   height: 420px;
   margin: 200px auto;
@@ -70,7 +67,7 @@ body {
   list-style-type: none;
 }
 
-.numbers button {
+.rate-btn {
   background-color: var(--dark-blue);
   padding: 15px 20px;
   border-radius: 50%;
@@ -80,16 +77,16 @@ body {
   transition: 0.3s;
 }
 
-.numbers:hover button {
+.rate-btn:hover {
   background-color: var(--light-grey);
   cursor: pointer;
   color: var(--white);
 }
 
-.numbers:active button {
+.rate-btn:focus {
   background-color: var(--primary-orange-color);
   color: var(--white);
-}
+} 
 
 .submit_button {
   background-color: var(--primary-orange-color);
@@ -112,7 +109,7 @@ body {
 
 /* THANK YOU PAGE */
 
-.thank-you-container {
+.hidden {
   display: none;
 }
 .thank-you-image {
