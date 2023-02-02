@@ -2,7 +2,6 @@
   --primary-orange-color: hsl(25, 97%, 53%);
   --white: hsl(0, 0%, 100%);
   --light-grey: hsl(217, 12%, 63%);
-  --medium-grey: hsl(216, 12%, 54%);
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
 }
@@ -35,8 +34,10 @@ body {
   border-radius: 34px;
 }
 
+/* VOTE PAGE */
+
 .star {
-  background-color: var(--medium-grey);
+  background-color: #1f3439;
   padding: 15px 15px 11px 15px;
   border-radius: 50%;
   width: fit-content;
@@ -54,6 +55,7 @@ body {
   font-weight: 400;
   margin: 30px 0;
   line-height: 1.7;
+  opacity: 0.6;
 }
 
 .vote {
@@ -63,11 +65,17 @@ body {
 }
 
 .numbers {
-  background-color: var(--medium-grey);
+  background-color: #1f3439;
   padding: 15px 20px;
   border-radius: 50%;
   margin-bottom: 30px;
+  opacity: 0.6;
+}
 
+
+.numbers:hover {
+  background-color: var(--light-grey);
+  cursor: pointer;
 }
 
 .submit_button {
@@ -80,6 +88,45 @@ body {
   border-radius: 25px;
   font-size: 15px;
   letter-spacing: 2px;
+}
+
+.submit_button {
+  cursor: pointer;
+}
+
+/* THANK YOU PAGE */
+.thank-you-image {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.choice {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--primary-orange-color);
+  background-color: #1f3439;
+  border-radius: 20px;
+  margin: 20px 0;
+  padding: 4px 0;
+  /* width: 200px; */
+}
+
+.thank {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 25px 0;
+}
+
+.thank-text {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  opacity: 0.6;
+  margin: 20px 0;
 }
 
 /* FOOTER */
