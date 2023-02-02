@@ -37,7 +37,12 @@ body {
 /* VOTE PAGE */
 
 .star {
-  background-color: #1f3439;
+  /* background-color: #1f3439; */
+  background-image: linear-gradient(
+    to bottom,
+    hsl(212, 18%, 14%),
+    hsl(220, 16%, 11%)
+  );
   padding: 15px 15px 11px 15px;
   border-radius: 50%;
   width: fit-content;
