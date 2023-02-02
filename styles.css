@@ -2,6 +2,7 @@
   --primary-orange-color: hsl(25, 97%, 53%);
   --white: hsl(0, 0%, 100%);
   --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
 }
@@ -29,7 +30,11 @@ body {
   height: 420px;
   margin: 200px auto;
   padding: 25px;
-  background-color: var(--dark-blue);
+  background-image: linear-gradient(
+    to bottom,
+    hsl(212, 18%, 14%),
+    hsl(220, 16%, 11%)
+  );;
   border: none;
   border-radius: 34px;
 }
@@ -37,12 +42,7 @@ body {
 /* VOTE PAGE */
 
 .star {
-  /* background-color: #1f3439; */
-  background-image: linear-gradient(
-    to bottom,
-    hsl(212, 18%, 14%),
-    hsl(220, 16%, 11%)
-  );
+  background-color: var(--dark-blue);
   padding: 15px 15px 11px 15px;
   border-radius: 50%;
   width: fit-content;
@@ -60,27 +60,35 @@ body {
   font-weight: 400;
   margin: 30px 0;
   line-height: 1.7;
-  opacity: 0.6;
+  color: var(--light-grey);
 }
 
 .vote {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  list-style-type: none;
 }
 
-.numbers {
-  background-color: #1f3439;
+.numbers button {
+  background-color: var(--dark-blue);
   padding: 15px 20px;
   border-radius: 50%;
   margin-bottom: 30px;
-  opacity: 0.6;
+  border: none;
+  color: var(--light-grey);
+  transition: 0.3s;
 }
 
-
-.numbers:hover {
+.numbers:hover button {
   background-color: var(--light-grey);
   cursor: pointer;
+  color: var(--white);
+}
+
+.numbers:active button {
+  background-color: var(--primary-orange-color);
+  color: var(--white);
 }
 
 .submit_button {
@@ -93,13 +101,20 @@ body {
   border-radius: 25px;
   font-size: 15px;
   letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.submit_button {
-  cursor: pointer;
+.submit_button:hover {
+  background-color: var(--white);
+  color: var(--primary-orange-color);
 }
 
 /* THANK YOU PAGE */
+
+.thank-you-container {
+  display: none;
+}
 .thank-you-image {
   text-align: center;
   margin: 20px 0;
@@ -111,11 +126,11 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: var(--primary-orange-color);
-  background-color: #1f3439;
+  background-color: var(--dark-blue);
   border-radius: 20px;
   margin: 20px 0;
   padding: 4px 0;
-  /* width: 200px; */
+ /* width: 200px; */
 }
 
 .thank {
@@ -130,7 +145,7 @@ body {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
-  opacity: 0.6;
+  color: var(--light-grey);
   margin: 20px 0;
 }
 
